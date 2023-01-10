@@ -14,6 +14,11 @@ export function fetchList(): Promise<AxiosResponse<GetListResponse>> {
   return axios.get(url);
 }
 
+export function requsetWeather(): Promise<AxiosResponse<GetListResponse>> {
+  const url = " https://api.stormglass.io/v2";
+  return axios.get(url);
+}
+
 export async function getUser() {
   // async, await을 사용하는 경우
   try {

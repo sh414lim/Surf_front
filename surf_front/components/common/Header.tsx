@@ -5,7 +5,7 @@ import Link from "next/link";
 
 const useStyles = makeStyles({
   headNav: {
-    padding: "1px 3px 0px 3px",
+    padding: "1px 3px 0px 5px",
   },
 });
 
@@ -45,7 +45,9 @@ const Header = () => {
           <Typography className={customStyle.headNav}>
             <Link href="/Shop/ShopList">Shop</Link>
           </Typography>
-          <Typography className={customStyle.headNav}>Bitch</Typography>
+          <Typography className={customStyle.headNav}>
+            <Link href="/weather/weatherInfo">Bitch</Link>
+          </Typography>
           <Link href="/auth/LoginPage">
             <Typography
               sx={{ "&:hover": { opacity: "0.6" } }}
