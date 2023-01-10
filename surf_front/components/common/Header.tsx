@@ -18,7 +18,6 @@ const Header = () => {
         color: "black",
         padding: "15px",
         width: "90%",
-        margin: "0px 0px 0px 50px",
         // borderBottom: "1px solid rgba(0,0,0,0.2)",
       }}
     >

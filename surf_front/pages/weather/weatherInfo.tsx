@@ -4,6 +4,7 @@ import KakaoMap from "../../components/common/KakaoMap";
 
 export default function weatherInfo() {
   const [weather, setWeather] = useState();
+  const [on, off] = useState(false);
 
   useEffect(() => {
     const lat: number = 58.7984;
@@ -22,7 +23,7 @@ export default function weatherInfo() {
       .then((jsonData) => {
         setWeather(jsonData);
       });
-  }, []);
+  }, [on]);
   console.log(weather);
 
   return (
