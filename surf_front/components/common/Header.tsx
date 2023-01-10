@@ -17,7 +17,6 @@ const Header = () => {
       sx={{
         color: "black",
         padding: "15px",
-        width: "90%",
         // borderBottom: "1px solid rgba(0,0,0,0.2)",
       }}
     >

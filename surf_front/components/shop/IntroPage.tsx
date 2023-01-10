@@ -38,7 +38,7 @@ const IntroPage = () => {
 
 export default IntroPage;
 
-const itemData = [
+export const itemData = [
   {
     img: "https://images.unsplash.com/photo-1528150177508-7cc0c36cda5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fHN1cmZ8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60",
     title: "Bed",

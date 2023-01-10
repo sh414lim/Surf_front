@@ -36,7 +36,7 @@ function ShopList<T>() {
     <>
       <Grid
         container
-        spacing={2}
+        spacing={1}
         sx={{ width: "80%", margin: "30px 0px 0px 230px" }}
       >
         {list &&
@@ -56,6 +56,7 @@ function ShopList<T>() {
                   originalTitle={original_title}
                   voteCount={vote_count}
                   posterPath={poster_path}
+                  overview={overview}
                 />
               </>
             )
