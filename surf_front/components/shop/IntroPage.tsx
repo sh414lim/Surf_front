@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, ImageList, ImageListItem, Typography } from "@mui/material";
+import Link from "next/link";
 const IntroPage = () => {
   return (
     <Box
@@ -11,26 +12,26 @@ const IntroPage = () => {
       }}
     >
       <ImageList variant="masonry" cols={6} gap={17}>
-        {itemData.map((item) => (
-          // <Link>
-          <ImageListItem
-            key={item.img}
-            sx={{
-              boxShadow: "5px 5px 15px 1px rgba(0, 0, 0, .3)",
-              "&:hover": {
-                boxShadow: "10px 10px 20px 3px rgba(0, 0, 0, .9)",
-                transition: "0.5s",
-              },
-            }}
-          >
-            <img
-              src={`${item.img}?w=248&fit=crop&auto=format`}
-              srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
-              alt={item.title}
-            />
-          </ImageListItem>
-          // </Link>
-        ))}
+        <Link href="Shop/ShopList">
+          {itemData.map((item) => (
+            <ImageListItem
+              key={item.img}
+              sx={{
+                boxShadow: "5px 5px 15px 1px rgba(0, 0, 0, .3)",
+                "&:hover": {
+                  boxShadow: "10px 10px 20px 3px rgba(0, 0, 0, .9)",
+                  transition: "0.5s",
+                },
+              }}
+            >
+              <img
+                src={`${item.img}?w=248&fit=crop&auto=format`}
+                srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                // alt={item.title}
+              />
+            </ImageListItem>
+          ))}
+        </Link>
       </ImageList>
     </Box>
   );
