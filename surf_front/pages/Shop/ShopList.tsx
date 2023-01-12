@@ -9,6 +9,7 @@ import CityInfoBlock from "../../components/common/CityInfoBlock";
 import PlaceInfo from "../../components/common/PlaceInfo";
 import Link from "next/link";
 import { fontWeight } from "@mui/system";
+import PlaceName from "../../components/common/PlaceName";
 
 interface ListInterface {
   id: number;
@@ -21,8 +22,9 @@ interface ListInterface {
 
 function ShopList<T>() {
   const [list, setList] = useState([]);
-  const [demoLength, setDemoLength] = useState([1, 23, 4, 5, 5, 7, 9]);
+  const [demoLength, setDemoLength] = useState([1, 23, 4, 5, 5, 7]);
   const [demo2Length, setDemo2Length] = useState([1, 23, 4, 5, 3, 7]);
+  const [demo3Length, setDemo3Length] = useState([1, 23, 4, 5]);
   useEffect(() => {
     // https://api.stormglass.io/v2/weather/point
     const text = axios
@@ -44,12 +46,12 @@ function ShopList<T>() {
       <Box
         sx={{
           backgroundImage:
-            "url(https://images.unsplash.com/photo-1578263373471-fb70bf7cc624?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTUyfHxzdXJmfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=2000&q=60)",
+            "url(https://images.unsplash.com/photo-1578263373471-fb70bf7cc624?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTUyfHxzdXJmfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=3000&q=60)",
           left: 0,
           right: 0,
           bottom: 0,
           top: 0,
-          height: "1000px",
+          height: "1800px",
           position: "absolute",
         }}
       >
@@ -82,16 +84,7 @@ function ShopList<T>() {
               alignItems: "center",
             }}
           >
-            <Box sx={{ margin: "50px 0px 0px 0px" }}>
-              <Typography
-                sx={{ fontSize: "60px", fontWeight: "600", color: "white" }}
-              >
-                GangnEung
-              </Typography>
-              <Typography sx={{ fontSize: "30px", color: "black" }}>
-                Geumjin Beach
-              </Typography>
-            </Box>
+            <PlaceName />
             {/* <Link href="/">HOME</Link> */}
           </Grid>
 
@@ -101,12 +94,47 @@ function ShopList<T>() {
             ))}
           </Grid>
 
-          <Grid xs={12} sx={{}}>
+          <Grid xs={12} sx={{ margin: "60px 0px 0px 0px" }}>
             <Box sx={{ display: "flex" }}>
               {demo2Length.map((item, i) => (
                 <CityInfoBlock />
               ))}
             </Box>
+          </Grid>
+          <Grid
+            xs={12}
+            sx={{
+              display: "flex",
+              justifyContent: "space-around",
+              margin: "90px 0px 0px 0px",
+            }}
+          >
+            {demo3Length.map((item, i) => (
+              <Grid xs={4} sx={{}}>
+                <Box
+                  sx={{
+                    boxShadow: "1px 2px 1px 2px rgba(0,0,0,0.3)",
+                    backgroundImage: `url(https://images.unsplash.com/photo-1528150177508-7cc0c36cda5c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjh8fHN1cmZ8ZW58MHx8MHx8&auto=format&fit=crop&w=250&q=60?w=100&fit=crop&auto=format&dpr=2)`,
+                    borderRadius: "10px",
+                    height: "600px",
+                    width: "90%",
+                    opacity: 0.85,
+                    margin: "30px 0px 0px 50px  ",
+                    "&:hover": {
+                      transform: "rotateY( 180deg )",
+                      // boxShadow: "2px 3px 2px 3px rgba(0, 0, 0, .6)",
+                      transition: "1.9s",
+                      opacity: 1,
+                    },
+                  }}
+                >
+                  <Box>
+                    <Typography sx={{}}>서핑샵</Typography>
+                    {/* <Typography>he best burger</Typography> */}
+                  </Box>
+                </Box>
+              </Grid>
+            ))}
           </Grid>
         </Grid>
       </Box>

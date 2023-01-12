@@ -14,6 +14,8 @@ export default function WearherBlock() {
           boxShadow: "1px 2px 1px 2px rgba(0,0,0,0.3)",
           backgroundColor: "rgba( 255, 255, 255, 0.2 )",
           borderRadius: "10px",
+          display: "flex",
+          width: "90%",
           "&:hover": {
             boxShadow: "2px 3px 2px 3px rgba(0, 0, 0, .6)",
             transition: "0.2s",

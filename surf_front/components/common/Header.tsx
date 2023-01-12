@@ -41,7 +41,7 @@ const Header = () => {
           }}
         >
           <Typography className={customStyle.headNav}>
-            <Link href="/Shop/ShopList">Shop</Link>
+            <Link href="/Shop/PlaceList">Shop</Link>
           </Typography>
           <Typography className={customStyle.headNav}>
             <Link href="/weather/weatherInfo">Bitch</Link>
