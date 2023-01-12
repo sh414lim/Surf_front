@@ -23,23 +23,176 @@ export default function IconLabelTabs() {
             onChange={handleChange}
             aria-label="icon label tabs example"
           >
-            <Tab icon={<PhoneIcon />} label="강릉" />
-            <Tab icon={<FavoriteIcon />} label="제주" />
-            <Tab icon={<PersonPinIcon />} label="양양" />
-            <Tab icon={<PhoneIcon />} label="부산" />
-            <Tab icon={<FavoriteIcon />} label="울산" />
-            <Tab icon={<PersonPinIcon />} label="동해" />
-            <Tab icon={<PhoneIcon />} label="속초" />
-            <Tab icon={<FavoriteIcon />} label="호주" />
-            <Tab icon={<PersonPinIcon />} label="남해" />
-            <Tab icon={<PhoneIcon />} label="동해" />
-            <Tab icon={<FavoriteIcon />} label="영덕" />
-            <Tab icon={<PersonPinIcon />} label="서귀포" />
-            <Tab icon={<PhoneIcon />} label="김해" />
-            <Tab icon={<FavoriteIcon />} label="진주" />
-            <Tab icon={<PersonPinIcon />} label="애월" />
-            <Tab icon={<PhoneIcon />} label="일본" />
-            <Tab icon={<PersonPinIcon />} label="서귀포" />
+            <Tab
+              sx={{
+                "&:hover": {
+                  color: "pink",
+                  transition: "0.5s",
+                },
+              }}
+              icon={<FavoriteIcon />}
+              label="강릉"
+            />
+            <Tab
+              sx={{
+                "&:hover": {
+                  color: "pink",
+                  transition: "0.5s",
+                },
+              }}
+              icon={<FavoriteIcon />}
+              label="제주"
+            />
+            <Tab
+              sx={{
+                "&:hover": {
+                  color: "pink",
+                  transition: "0.5s",
+                },
+              }}
+              icon={<FavoriteIcon />}
+              label="양양"
+            />
+            <Tab
+              sx={{
+                "&:hover": {
+                  color: "pink",
+                  transition: "0.5s",
+                },
+              }}
+              icon={<FavoriteIcon />}
+              label="부산"
+            />
+            <Tab
+              sx={{
+                "&:hover": {
+                  color: "pink",
+                  transition: "0.5s",
+                },
+              }}
+              icon={<FavoriteIcon />}
+              label="울산"
+            />
+            <Tab
+              sx={{
+                "&:hover": {
+                  color: "pink",
+                  transition: "0.5s",
+                },
+              }}
+              icon={<FavoriteIcon />}
+              label="동해"
+            />
+            <Tab
+              sx={{
+                "&:hover": {
+                  color: "pink",
+                  transition: "0.5s",
+                },
+              }}
+              icon={<FavoriteIcon />}
+              label="속초"
+            />
+            <Tab
+              sx={{
+                "&:hover": {
+                  color: "pink",
+                  transition: "0.5s",
+                },
+              }}
+              icon={<FavoriteIcon />}
+              label="호주"
+            />
+            <Tab
+              sx={{
+                "&:hover": {
+                  color: "pink",
+                  transition: "0.5s",
+                },
+              }}
+              icon={<FavoriteIcon />}
+              label="남해"
+            />
+            <Tab
+              sx={{
+                "&:hover": {
+                  color: "pink",
+                  transition: "0.5s",
+                },
+              }}
+              icon={<FavoriteIcon />}
+              label="동해"
+            />
+            <Tab
+              sx={{
+                "&:hover": {
+                  color: "pink",
+                  transition: "0.5s",
+                },
+              }}
+              icon={<FavoriteIcon />}
+              label="영덕"
+            />
+            <Tab
+              sx={{
+                "&:hover": {
+                  color: "pink",
+                  transition: "0.5s",
+                },
+              }}
+              icon={<FavoriteIcon />}
+              label="서귀포"
+            />
+            <Tab
+              sx={{
+                "&:hover": {
+                  color: "pink",
+                  transition: "0.5s",
+                },
+              }}
+              icon={<FavoriteIcon />}
+              label="김해"
+            />
+            <Tab
+              sx={{
+                "&:hover": {
+                  color: "pink",
+                  transition: "0.5s",
+                },
+              }}
+              icon={<FavoriteIcon />}
+              label="진주"
+            />
+            <Tab
+              sx={{
+                "&:hover": {
+                  color: "pink",
+                  transition: "0.5s",
+                },
+              }}
+              icon={<FavoriteIcon />}
+              label="애월"
+            />
+            <Tab
+              sx={{
+                "&:hover": {
+                  color: "pink",
+                  transition: "0.5s",
+                },
+              }}
+              icon={<FavoriteIcon />}
+              label="일본"
+            />
+            <Tab
+              sx={{
+                "&:hover": {
+                  color: "pink",
+                  transition: "0.5s",
+                },
+              }}
+              icon={<FavoriteIcon />}
+              label="서귀포"
+            />
           </Tabs>
         </Grid>
         <Grid xs={12} sx={{ display: "flex", justifyContent: "center" }}>
