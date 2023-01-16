@@ -60,7 +60,6 @@ export default function PlaceListInfo() {
                         <Typography sx={{ opacity: "0.4" }}>
                           강릉 :경포대
                         </Typography>
-
                         <Typography sx={{ opacity: "0,7" }}>
                           <StarRateIcon
                             sx={{
