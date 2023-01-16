@@ -40,16 +40,15 @@ const Header = () => {
             alignItems: "end",
           }}
         >
-          <Typography className={customStyle.headNav}>
+          <Typography sx={{ padding: "1px 3px 0px 5px" }}>
             <Link href="/Shop/PlaceList">Shop</Link>
           </Typography>
-          <Typography className={customStyle.headNav}>
+          <Typography sx={{ padding: "1px 3px 0px 5px" }}>
             <Link href="/weather/weatherInfo">Bitch</Link>
           </Typography>
           <Link href="/auth/LoginPage">
             <Typography
-              sx={{ "&:hover": { opacity: "0.6" } }}
-              className={customStyle.headNav}
+              sx={{ padding: "1px 3px 0px 5px", "&:hover": { opacity: "0.6" } }}
             >
               Login{" "}
             </Typography>
